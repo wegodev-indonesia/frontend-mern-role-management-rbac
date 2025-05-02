@@ -7,11 +7,15 @@ export default async function Tes() {
   } else {
     return (
       <>
-        <p>Authenticated :</p>
-        <p>Id: {session.user._id}</p>
-        <p>Fullname: {session.user.fullname}</p>
-        <p>Roles: {session.user.roles.join(", ")}</p>
-        <p>Access Token: {session.user.accessToken}</p>
+        <p>
+          <strong>Id:</strong> {session.user._id}
+        </p>
+        <p>
+          <strong>Fullname:</strong> {session.user.fullname}
+        </p>
+        <p>
+          <strong>Roles:</strong> {session.user.roles.join(", ")}
+        </p>
       </>
     );
   }
